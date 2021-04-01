@@ -1,0 +1,53 @@
+body{
+    background: crimson;
+}
+
+.card{
+    border: solid 2px black;
+    background: brown;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 45px;
+    transition: 2s;
+
+}
+h1:hover{
+    color: white;
+    scale: 1.5;
+}
+
+
+h2{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Dela Gothic One', cursive;
+    transition: 2s;
+}
+h2:hover{
+    color: white;
+}
+
+button{
+    background-color:  firebrick;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 2s;
+
+}
+button:hover{
+    background-color:black;
+    color:white ;
+
+}
+
+
+
+

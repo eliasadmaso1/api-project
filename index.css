@@ -1,0 +1,129 @@
+#container{
+    display: grid;
+    gap:5px; 
+
+
+
+    grid-template-areas: 
+    'header'
+    'section'
+    'footer'
+
+    
+}
+header {
+    grid-area: header;
+    border: solid 2px black;
+    height: 150px;
+    background: linear-gradient(
+    45deg
+    , black, transparent);}
+
+section{
+    grid-area: section;
+    border: solid 5px black;
+    background: linear-gradient(
+        45deg
+        , black, transparent);
+    }
+
+
+footer{
+    grid-area: footer;
+    border: solid 5px black;
+    background: linear-gradient(
+        45deg
+        , black, transparent);
+    height: 70px;
+
+}
+
+.card{
+    width: 294px;
+    height: 294px;
+    border: solid 5px white;
+    border-radius: 15px;
+    margin: 25px;
+    padding: 12px;
+    background: black;
+    color: white;
+    font-size: 13px;
+    word-break: break-word;
+}
+#mainDiv{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+#button1{
+  background-color: #4CAECD;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 2s;
+}
+#button1:hover{
+    background-color: white;
+    color: black;
+    
+}
+#button2{
+  background-color: #4CAECD;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 2s;
+}
+#button2:hover{
+    background-color: white;
+    color:black ;
+
+
+}
+
+
+td{
+    
+    color: white;
+    border: solid 3px black; width:300px; 
+    color:black; 
+    background:white;
+}
+th{
+    color: white;
+    border: solid 3px black; width:300px; 
+    color:black; 
+    background:white;
+    
+   
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+button{
+    background-color:  firebrick;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 2s;
+
+}
+button:hover{
+    background-color: white;
+    color:black ;
+
+}
