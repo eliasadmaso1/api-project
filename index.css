@@ -49,7 +49,14 @@ footer{
     color: white;
     font-size: 13px;
     word-break: break-word;
+    transition: 2s;
 }
+
+.card:hover{
+    background-color: black;
+    opacity: 0.4;
+}
+
 #mainDiv{
     display: flex;
     flex-wrap: wrap;
