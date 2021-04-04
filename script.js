@@ -1,5 +1,5 @@
 function findApi(){
-   return fetch("http://next.json-generator.com/api/json/get/NJ-UoW2Xq")
+   return fetch("https://next.json-generator.com/api/json/get/NJ-UoW2Xq")
 .then((response) => {
 return response.json(); })
 }
