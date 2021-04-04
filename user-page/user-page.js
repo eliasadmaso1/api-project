@@ -58,5 +58,5 @@ console.log(userId)
 toUserPage();
 
 function goToHome() {
-  window.location.replace("../index.html");
+  window.location.replace("..index.html");
 }
