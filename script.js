@@ -7,6 +7,16 @@ return response.json(); })
 function goToUserPage(userId){
   window.location.replace(`user-page/user-page.html?id=${userId}`)
 }
+class user{
+  constructor(firstName,lastName,email,age,phone,id){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.email = email;
+    this.age = age;
+    this.phone = phone;
+    this.id = id;
+  }
+}
 
 
 let results = [];
@@ -16,14 +26,15 @@ async function onBody(){
         
         results = await findApi();
         results.forEach(element => {
+          let userObj = new user(element.name.first,element.name.last,element.email,element.age,element.phone,element._id);
             mainDiv.innerHTML += `
         
-          <div class="card" onclick="goToUserPage('${element._id}')" >
-          <h2>First Name - ${element.name.first}</h2>
-          <h2>Last Name - ${element.name.last}</h2>
-          <h2>Email - ${element.email}</h2>
-          <h2>Age - ${element.age}</h2>
-          <h2>Phone - ${element.phone}</h2>
+          <div class="card" onclick="goToUserPage('${userObj.id}')" >
+          <h2>First Name - ${userObj.firstName}</h2>
+          <h2>Last Name - ${userObj.lastName}</h2>
+          <h2>Email - ${userObj.email}</h2>
+          <h2>Age - ${userObj.age}</h2>
+          <h2>Phone - ${userObj.phone}</h2>
           </div>
          
           `});
@@ -55,16 +66,18 @@ async function tableApi(){
         </table>
         `
         objApi2.forEach(element => {
+          let userObj2 = new user(element.name.first,element.name.last,element.email,element.age,element.phone);
+
           document.body.innerHTML +=
             `
             <div style="background: firebrick;">
             <table style="width:100%">
             <tr>
-              <td >${element.name.first}</td>
-              <td>${element.name.last}</td>
-              <td>${element.email}</td>
-              <td>${element.age}</td>
-              <td>${element.phone}</td>
+              <td >${userObj2.firstName}</td>
+              <td>${userObj2.lastName}</td>
+              <td>${userObj2.email}</td>
+              <td>${userObj2.age}</td>
+              <td>${userObj2.phone}</td>
             </tr>
             </table>
            </div>
